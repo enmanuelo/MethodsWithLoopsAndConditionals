@@ -4,22 +4,32 @@ namespace MethodsWithLoopsAndConditions
 {
     class Program
     {
-        public static void PrintAbsThousand()
+        public static void PrintThousand()
         {
-            var numbers = new List<int>();
-            int num = -1000;
+            // vvv Long Way vvv
 
-            while (num <= 1000)
+            //var numbers = new List<int>();
+            //int num = -1000;
+
+            //while (num <= 1000)
+            //{
+            //    numbers.Add(num);
+            //    num++;
+            //}
+
+            //for (int i = 2000; i >= 0; i--)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            // vv CCR vv
+
+            for (int i = 1000; i >= -1000; i--)
             {
-                numbers.Add(num);
-                num++;
+                Console.WriteLine(i);
             }
 
-            for (int i = 2000; i >= 0; i--)
-            {
-                Console.WriteLine(numbers[i]);
-            }
-
+            Console.WriteLine("");
         }
         public static void PrintByThrees()
         {
@@ -27,7 +37,9 @@ namespace MethodsWithLoopsAndConditions
             {
                 Console.WriteLine(i);
             }
+            Console.WriteLine("");
         }
+
         public static void AreEqual(int num1, int num2)
         {
             if (num1 == num2)
@@ -41,14 +53,19 @@ namespace MethodsWithLoopsAndConditions
         }
         public static void OddOrEven(int num)
         {
-            if (num % 2 == 0)
-            {
-                Console.WriteLine("This number is even");
-            }
-            else
-            {
-                Console.WriteLine("This number is odd");
-            }
+            // vv Long way vv
+            //if (num % 2 == 0)
+            //{
+            //    Console.WriteLine("This number is even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("This number is odd");
+            //}
+
+            // vv CCR vv
+            var answer = num % 2 == 0 ? "This number is even" : "This number is odd";
+            Console.WriteLine(answer);
         }
         public static void PositiveOrNegative(int num)
         {
@@ -109,10 +126,8 @@ namespace MethodsWithLoopsAndConditions
 
         static void Main(string[] args)
         {
-            PrintAbsThousand();
-            Console.WriteLine("");
+            PrintThousand();
             PrintByThrees();
-            Console.WriteLine("");
             AreEqual(4, 4);
             OddOrEven(123);
             PositiveOrNegative(1324);

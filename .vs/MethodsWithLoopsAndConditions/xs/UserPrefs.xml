@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{9E57B4AB-1392-4888-B959-860C3D39F43A}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MethodsWithLoopsAndConditions PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MethodsWithLoopsAndConditions/Program.cs">
     <Files>
-      <File FileName="MethodsWithLoopsAndConditions/Program.cs" Line="31" Column="35" />
+      <File FileName="MethodsWithLoopsAndConditions/Program.cs" Line="135" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,8 +23,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.MethodsWithLoopsAndConditions FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
