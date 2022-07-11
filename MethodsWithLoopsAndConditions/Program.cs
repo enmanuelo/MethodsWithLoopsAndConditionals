@@ -110,18 +110,11 @@ namespace MethodsWithLoopsAndConditions
         {
             Console.WriteLine("Give an integer for multiplication table");
             int num = int.Parse(Console.ReadLine());
-            Console.WriteLine($"{num}x1= {num*1}");
-            Console.WriteLine($"{num}x2= {num * 2}");
-            Console.WriteLine($"{num}x3= {num * 3}");
-            Console.WriteLine($"{num}x4= {num * 4}");
-            Console.WriteLine($"{num}x5= {num * 5}");
-            Console.WriteLine($"{num}x6= {num * 6}");
-            Console.WriteLine($"{num}x7= {num * 7}");
-            Console.WriteLine($"{num}x8= {num * 8}");
-            Console.WriteLine($"{num}x9= {num * 9}");
-            Console.WriteLine($"{num}x10= {num * 10}");
-            Console.WriteLine($"{num}x11= {num * 11}");
-            Console.WriteLine($"{num}x12= {num * 12}");
+
+            for (int i = 1; i <= 12; i++)
+            {
+                Console.WriteLine($"{num}x{i} = {num * i}");
+            }
         }
 
         static void Main(string[] args)
